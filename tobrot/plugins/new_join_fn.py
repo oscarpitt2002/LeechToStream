@@ -35,7 +35,7 @@ async def new_join_f(client, message):
 async def help_message_f(client, message):
     
 
-    await message.reply_text("""No one gonna HELP here!! Leech if you KNOW :) .\n\n PORN LEECH = Instant BAN""", disable_web_page_preview=True)
+    await message.reply_text("""No one gonna HELP here!! Leech if you KNOW :) .\n\n PORN LEECH = Instant BAN \nCheck #Help""", disable_web_page_preview=True)
     
     
 
