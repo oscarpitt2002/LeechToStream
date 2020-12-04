@@ -35,7 +35,7 @@ async def new_join_f(client, message):
 async def help_message_f(client, message):
     inline_keyboard = []
     inline_keyboard.append([
-        pyrogram.InlineKeyboardButton(
+        pyrogram.types.InlineKeyboardButton(
             text="Read This for help!",
             url="https://t.me/c/1401686151/47968"
         )
