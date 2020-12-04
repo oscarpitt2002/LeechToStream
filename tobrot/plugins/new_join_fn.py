@@ -33,13 +33,21 @@ async def new_join_f(client, message):
 
 
 async def help_message_f(client, message):
-    # await message.reply_text("no one gonna help you 🤣🤣🤣🤣", quote=True)
-    #channel_id = str(AUTH_CHANNEL)[4:]
-    #message_id = 99
-    # display the /help
+    inline_keyboard = []
+    inline_keyboard.append([
+        pyrogram.InlineKeyboardButton(
+            text="Read This for help!",
+            url="https://t.me/c/1401686151/47968"
+        )
+    ])
+    reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+    await message.reply_text(
+        """No one gonna HELP here!! Leech if you KNOW :) .\n\n PORN LEECH = Instant BAN""",
+        quote=True,
+        reply_markup=reply_markup
+    )
     
-    await message.reply_text("""No one gonna HELP here!! Leech if you KNOW :) .\n\n PORN LEECH = Instant BAN""", disable_web_page_preview=True)
-
+    
 
 async def rename_message_f(client, message):
     inline_keyboard = []
